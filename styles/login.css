@@ -1,0 +1,276 @@
+.install-button-container {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  z-index: 9999;
+  /* Ensure it's above other content */
+}
+
+.install-button {
+  background-color: #0a0f01;
+  color: #f6f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.error-message {
+  color: red
+}
+
+.alert-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: rgb(28, 116, 28);
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.danger-sign {
+  color: red;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.login-container {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* background-color: #8db600; */
+  /* padding: 25px; */
+  gap: 10%;
+}
+
+.login-header-image {
+  width: 40%;
+  height: 90%;
+  margin-right: -21px;
+  margin-bottom: 46px;
+  margin-left: -75px;
+}
+
+.right {
+  width: 40%;
+  height: 50%;
+}
+
+.login-form {
+  /* max-width: 300px; */
+  width: 90%;
+  height: 100%;
+  padding: 20px;
+  /* margin: 20px; */
+  border: 3px solid #8bd600;
+  box-shadow: 0 4px 8px rgba(173, 216, 230, 0.8),
+    0 -4px 8px rgba(173, 216, 230, 0.8),
+    8px 0 16px rgba(173, 216, 230, 0.6),
+    -8px 0 16px rgba(173, 216, 230, 0.6);
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.show-password input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.text-center {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+button {
+  width: 80%;
+  background-color: #8db600;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 162px;
+}
+
+@media screen and (max-width:1200px) {
+
+  .install-button-container {
+    display: block;
+    /* Show the installation button container on smaller screens */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .install-button-container {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .install-button {
+    font-size: 12px;
+    width: 100px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .install-button-container {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .install-button {
+    font-size: 10px;
+    width: 90px;
+    height: 20px;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height: 100vh;
+    gap: 15%;
+  }
+
+  .login-header-image {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -31px;
+  }
+
+  .right {
+    width: 40%;
+    height: 100%;
+  }
+
+  .login-form {
+    width: 150%;
+    height: 100%;
+    padding: 20px;
+    border: 3px solid #8bd600;
+    box-shadow: 0 4px 8px rgba(173, 216, 230, 0.8),
+      0 -4px 8px rgba(173, 216, 230, 0.8),
+      8px 0 16px rgba(173, 216, 230, 0.6),
+      -8px 0 16px rgba(173, 216, 230, 0.6);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: -30px;
+  }
+
+  .login-image {
+    width: 250px;
+    height: 109px;
+    margin-bottom: 20px;
+    margin-left: -25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .install-button-container {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    /* Adjust button position for better fit on even smaller screens */
+    right: 10px;
+    /* Adjust button position for better fit on even smaller screens */
+  }
+
+  .install-button {
+    font-size: 10px;
+    width: 90px;
+    /* Further adjust button width for better fit on even smaller screens */
+    height: 20px;
+    /* Further adjust button height for better fit on even smaller screens */
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height: 100vh;
+    /* background-color: #8db600; */
+    gap: 15%;
+  }
+
+  .right {
+    width: 40%;
+    height: 50%;
+  }
+
+  .login-header-image {
+    margin-top: 200px;
+    width: 90%;
+    margin-left: -19px;
+  }
+}
